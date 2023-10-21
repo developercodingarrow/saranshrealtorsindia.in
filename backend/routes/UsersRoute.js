@@ -1,0 +1,8 @@
+const express = require("express");
+const router = express.Router();
+const UserController = require("../controllers/UserController");
+
+router.post("/super-admin-register", UserController.superAdminRegister);
+router.post("/super-admin-login", UserController.loginSuperAdmin);
+
+module.exports = router;
